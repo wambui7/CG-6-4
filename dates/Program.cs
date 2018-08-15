@@ -8,7 +8,7 @@ namespace dates
         {
             DateTime startdate = DateTime.Now;
             DateTime enddate = Convert.ToDateTime("12, 31, 2018");
-            TimeSpan date = (enddate - startdate);
+            TimeSpan date = enddate.Subtract(startdate);
             Console.WriteLine(date.TotalDays);
             Console.ReadLine();
 
